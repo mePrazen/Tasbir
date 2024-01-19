@@ -1,0 +1,11 @@
+
+#email
+- { name: email_transport, value: smtp, section: email }
+- { name: email_host, value: smtp.mailgun.org, section: email }
+- { name: email_port, value: 587, section: email }
+- { name: email_encryption, value: tls, section: email }
+- { name: email_username, value: username, section: email }
+- { name: email_password, value: password, section: email }
+- { name: email_timeout, value: null, section: email }
+- { name: email_address, value: info@squarebx.com, section: email }
+- { name: email_name, value: Example, section: email }

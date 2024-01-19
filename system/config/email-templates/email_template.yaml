@@ -1,0 +1,17 @@
+- name: admin_user_created
+  subject: Account Activation
+  title: Admin User Created
+  message: 'Dear {FULLNAME}, Your account having username as {EMAIL} has been created. Thank You, KH'
+  description: 'Email to newly created admin user. {FULLNAME} - user fullname {EMAIL} - email address of user'
+
+- name: admin_user_blocked
+  title: Admin User Blocked
+  subject: Admin User Blocked
+  message: 'Dear {FULLNAME}, Your account having username as <b>{EMAIL}</b> has been blocked. Please contact KH for further details.Thank You,KH'
+  description: 'Email to admin user blocked. <b>{FULLNAME}</b> - user fullname<b>{LINK}</b> {EMAIL}</b> - email address of user'
+
+- name: admin_user_deleted
+  title: Admin User Delete
+  subject: Admin User Deleted
+  message: 'Dear {FULLNAME}, Your account having username as <b>{EMAIL}</b> has been deleted. Please contact KH for further details.Thank You,KH'
+  description: 'Email to admin user deleted. <b>{FULLNAME}</b> - user fullname<b>{LINK}</b> {EMAIL}</b> - email address of user'
