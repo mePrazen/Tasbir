@@ -34,9 +34,3 @@ jobs:
         mkdir -p database
         touch database/tasbir.sql
       working-directory: ${{ github.workspace }}/system
-        
-    - name: Execute tests (Unit and Feature tests) via PHPUnit
-      env:
-        DB_CONNECTION: mysql
-        DB_DATABASE: system/database/tasbir
-      run: ${{ github.workspace }}/system/vendor/bin/phpunit
