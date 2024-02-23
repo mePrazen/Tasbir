@@ -17,7 +17,8 @@ jobs:
         php-version: '8.2'
     - uses: actions/checkout@v3
     - name: Copy .env
-      run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+      run: php -r "file_exists('system/.env') || copy('system/.env.example', 'system/.env');"
+      working-directory: ${{ github.workspace }}/system
       
     - name: Install Dependencies
       run: composer install --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
