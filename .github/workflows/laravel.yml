@@ -27,6 +27,7 @@ jobs:
       
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
+      working-directory: ${{ github.workspace }}/system
       
     - name: Create Database
       run: |
